@@ -33,9 +33,4 @@ public class MerchantApplication : EntityBase<MerchantApplication, MerchantAppli
     
     return merchantApplication;
   }
-
-  public void StartApplication()
-  {
-    Status = MerchantApplicationStatus.Created;
-  }
 }
