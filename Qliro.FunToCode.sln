@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qliro.FunToCode", "Qliro.FunToCode\Qliro.FunToCode.csproj", "{D9F33C00-4383-49EF-965F-FF9689952D16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9F33C00-4383-49EF-965F-FF9689952D16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9F33C00-4383-49EF-965F-FF9689952D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9F33C00-4383-49EF-965F-FF9689952D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9F33C00-4383-49EF-965F-FF9689952D16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

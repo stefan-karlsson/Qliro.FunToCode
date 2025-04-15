@@ -1,0 +1,9 @@
+### Create Merchant Application
+POST http://localhost:5214/merchant-applications
+Content-Type: application/json
+
+{
+  "name": "Fun To Code"
+}
+
+###
