@@ -13,7 +13,7 @@ We hope you find the test both enjoyable and rewarding. We look forward to meeti
 ### 📌 Preparations
 
 - Read through this document carefully and make sure you understand what is expected of you before the interview.
-- Clone the project and ensure you can run it locally. If you're unable to bring your own laptop, it's perfectly fine to use one of our computers on-site – just let your recruiter know in advance so we can arrange it.
+- Clone the project and ensure you can run it locally, see [Getting Started](docs/GETTING_STARTED.md) for instructions. If you're unable to bring your own laptop, it's perfectly fine to use one of our computers on-site – just let your recruiter know in advance so we can arrange it.
 - Review the codebase and write down:
   - What you think works well in the current implementation.
   - What you would have done differently and why.
