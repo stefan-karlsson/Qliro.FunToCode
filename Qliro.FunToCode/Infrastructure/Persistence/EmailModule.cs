@@ -4,7 +4,7 @@ using ServiceScan.SourceGenerator;
 
 namespace Qliro.FunToCode.Infrastructure.Persistence;
 
-public static partial class PersistenceModule
+public static partial class EmailModule
 {
   public static void AddPersistenceModule(this IServiceCollection services)
   {

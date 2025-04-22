@@ -10,7 +10,7 @@ public class CreateMerchantApplicationHandler(IRepository<MerchantApplication> r
   public async Task<MerchantApplicationResponse> Handle(CreateMerchantApplicationCommand request,
     CancellationToken cancellationToken)
   {
-    var merchantApplication = MerchantApplication.Create(request.Name);
+    var merchantApplication = MerchantApplication.Create(request.Name, request.Email);
 
     var entity = await repository.AddAsync(merchantApplication, cancellationToken);
 

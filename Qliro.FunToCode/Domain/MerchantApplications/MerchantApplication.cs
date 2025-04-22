@@ -11,25 +11,28 @@ public class MerchantApplication : EntityBase<MerchantApplication, MerchantAppli
   {
   }
 
-  private MerchantApplication(MerchantApplicationId id, string name)
+  private MerchantApplication(MerchantApplicationId id, string name, string email)
   {
     Id = id;
     Name = name;
+    Email = email;
   }
 
   public string Name { get; }
 
+  public string Email { get; }
+  
   public DateTimeOffset CreatedAt { get; } = TimeProvider.System.GetUtcNow();
 
   public MerchantApplicationStatus Status { get; private set; } = MerchantApplicationStatus.Created;
 
-  public static MerchantApplication Create(string name)
+  public static MerchantApplication Create(string name, string email)
   {
     var id = MerchantApplicationId.From(Guid.NewGuid());
 
-    var merchantApplication = new MerchantApplication(id, name);
+    var merchantApplication = new MerchantApplication(id, name, email);
     
-    merchantApplication.RegisterDomainEvent(new MerchantApplicationCreatedEvent(id));
+    merchantApplication.RegisterDomainEvent(new MerchantApplicationCreatedEvent(id, email));
     
     return merchantApplication;
   }

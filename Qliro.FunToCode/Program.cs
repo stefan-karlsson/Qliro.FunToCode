@@ -11,6 +11,7 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddPersistenceModule();
 builder.Services.AddProcessingModule();
+builder.Services.AddEmailModule();
 
 var app = builder.Build();
 

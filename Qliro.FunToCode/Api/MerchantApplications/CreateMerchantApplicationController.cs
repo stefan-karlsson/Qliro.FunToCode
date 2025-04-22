@@ -14,7 +14,7 @@ public class CreateMerchantApplicationController : IEndpoint
     endpoints.MapPost("/merchant-applications",
       async (CreateMerchantApplicationRequest request, IMediator mediator, CancellationToken ct) =>
       {
-        var command = new CreateMerchantApplicationCommand(request.Name);
+        var command = new CreateMerchantApplicationCommand(request.Name, request.Email);
 
         var response = await mediator.Send(command, ct);
 
