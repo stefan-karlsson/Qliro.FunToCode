@@ -7,6 +7,6 @@ public class MerchantApplicationCreatedHandler : INotificationHandler<MerchantAp
 {
   public async Task Handle(MerchantApplicationCreatedEvent @event, CancellationToken cancellationToken)
   {
-    // #error Assignment starts here. When a merchant application has been created. We want to change the merchant application status to started and expose a event when that is done.
+    // #error Assignment starts here.
   }
 }
